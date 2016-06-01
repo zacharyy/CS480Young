@@ -11,19 +11,19 @@ git status
 ### Create your own Branch
 **NEVER make changes directly to the master br!!!**
 ```
-git checkout -b {branch name}
+git checkout -b {Branch Name}
 ```
 ##### Branch naming convention goes as First Initial, Last Initial, Changes you will make to the Branch 
-##### i.e for a person named Brian Zabo working on adding graphics the branch should be named
+##### i.e for a person named John Smith working on adding graphics the branch should be named JS-AddGraphics
 ****
 
 ### Editing your Branch
-Verify you are on your branch. From here on, any changes you make will affect only this branch. If you switch to the Master branch ```git checkout master```, git will automatically swap out the files and revert back to the state that the Master branch was in. Your changes to the other branch will also be saved and those files will be restored once you switch back to that branch ```git checkout BZ-Graphics```
+Verify you are on your branch. From here on, any changes you make will affect only this branch. If you switch to the Master branch ```git checkout master```, git will automatically swap out the files and revert back to the state that the Master branch was in. Your changes to the other branch will also be saved and those files will be restored once you switch back to that branch ```git checkout {Branch Name}```
 
 
 ### Saving changes to your branch
 ```
-Git add . # If files deleted a -A may be necessary
+git add . # If files deleted a -A may be necessary
 git commit -m "Breif description of changes made"
 git push origin {Branch Name}
 ```
@@ -33,7 +33,7 @@ git push origin {Branch Name}
 ### Pulling changes from github repository
 ```git pull```
 *or*
-```git pull origin {branch name}```
+```git pull origin {Branch Name}```
 
 
 ### Merging Your branch with master
