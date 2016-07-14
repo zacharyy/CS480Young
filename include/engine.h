@@ -11,6 +11,7 @@ class Engine
 {
   public:
     Engine(string name, int width, int height);
+    Engine(string name);
     ~Engine();
     bool Initialize();
     void Run();
@@ -24,6 +25,7 @@ class Engine
     string m_WINDOW_NAME;
     int m_WINDOW_WIDTH;
     int m_WINDOW_HEIGHT;
+    bool m_FULLSCREEN;
     SDL_Event m_event;
 
     Graphics *m_graphics;

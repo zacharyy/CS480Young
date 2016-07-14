@@ -10,7 +10,7 @@ class Window
   public:
     Window();
     ~Window();
-    bool Initialize(const string &name, int* height, int* width);
+    bool Initialize(const string &name, int* width, int* height);
     void Swap();
 
   private:
