@@ -55,7 +55,8 @@ bool Shader::AddShader(GLenum ShaderType)
             vec4 v = vec4(v_position, 1.0); \
             gl_Position = (projectionMatrix * viewMatrix * modelMatrix) * v; \
             color = v_color; \
-          }";
+          } \
+          ";
   }
   else if(ShaderType == GL_FRAGMENT_SHADER)
   {
@@ -68,7 +69,8 @@ bool Shader::AddShader(GLenum ShaderType)
           void main(void) \
           { \
              frag_color = vec4(color.rgb, 1.0); \
-          }";
+          } \
+          ";
   }
 
   GLuint ShaderObj = glCreateShader(ShaderType);
@@ -161,10 +163,3 @@ GLint Shader::GetUniformLocation(const char* pUniformName)
 
     return Location;
 }
-
-// GLint Shader::GetProgramParam(GLint param)
-// {
-//     GLint ret;
-//     glGetProgramiv(m_shaderProg, param, &ret);
-//     return ret;
-// }

@@ -10,7 +10,7 @@
   #include <OpenGL/GLU.h>
 #else //linux as default
   #include <GL/glew.h>
-  #include <GL/glu.h>
+  //#include <GL/glu.h>
 #endif
 
 // GLM for matricies
@@ -20,7 +20,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtx/rotate_vector.hpp>
 
-#define INVALID_UNIFORM_LOCATION 0xffffffff
+#define INVALID_UNIFORM_LOCATION 0x7fffffff
 
 struct Vertex
 {

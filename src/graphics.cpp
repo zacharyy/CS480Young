@@ -14,10 +14,15 @@ bool Graphics::Initialize(int width, int height)
 {
   // Used for the linux OS
   #if !defined(__APPLE__) && !defined(MACOSX)
-    cout << glewGetString(GLEW_VERSION) << endl;
+    // cout << glewGetString(GLEW_VERSION) << endl;
     glewExperimental = GL_TRUE;
 
     auto status = glewInit();
+
+    // This is here to grab the error that comes from glew init.
+    // This error is an GL_INVALID_ENUM that has no effects on the performance
+    glGetError();
+
     //Check for error
     if (status != GLEW_OK)
     {
