@@ -22,12 +22,6 @@ class Object
     GLuint IB;
 
     float angle;
-    
-    // To be deleted
-    float waveTime; 
-    float waveWidth; 
-    float waveHeight; 
-    float waveFreq;
 };
 
 #endif /* OBJECT_H */
