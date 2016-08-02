@@ -15,7 +15,6 @@ class Shader
     bool AddShader(GLenum ShaderType);
     bool Finalize();
     GLint GetUniformLocation(const char* pUniformName);
-    // GLint GetProgramParam(GLint param);
 
   private:
     GLuint m_shaderProg;    
