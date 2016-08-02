@@ -22,6 +22,9 @@
 
 #define INVALID_UNIFORM_LOCATION 0x7fffffff
 
+// Use this to change to OpenGL2.7
+#define USE_OPENGL_330 false
+
 struct Vertex
 {
   glm::vec3 vertex;
