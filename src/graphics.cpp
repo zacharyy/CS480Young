@@ -32,11 +32,9 @@ bool Graphics::Initialize(int width, int height)
   #endif
 
   // For OpenGL 3
-#if USE_OPENGL_330
   GLuint vao;
   glGenVertexArrays(1, &vao);
   glBindVertexArray(vao);
-#endif
 
   // Init Camera
   m_camera = new Camera();
