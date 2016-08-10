@@ -28,7 +28,7 @@ class Graphics
     GLint m_viewMatrix;
     GLint m_modelMatrix;
 
-    Object *m_object;
+    Object *m_cube;
 };
 
 #endif /* GRAPHICS_H */
