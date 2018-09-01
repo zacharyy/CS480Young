@@ -1,0 +1,4 @@
+/home/zacharyy/Desktop/CS480/computer-graphics/PA0/CMakeFiles/edit_cache.dir
+/home/zacharyy/Desktop/CS480/computer-graphics/PA0/CMakeFiles/Tutorial_SUCCESSFUL.dir
+/home/zacharyy/Desktop/CS480/computer-graphics/PA0/CMakeFiles/rebuild_cache.dir
+/home/zacharyy/Desktop/CS480/computer-graphics/PA0/CMakeFiles/Tutorial.dir
