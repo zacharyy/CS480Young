@@ -59,15 +59,17 @@ Object::Object()
   };*/
 	angle = 0.0f;
 
-//"../assets/board.mtl"
-//"../assets/board.obj"
+	
+	//"../assets/board.mtl"
+	//"../assets/board.obj"
 	std::string objectName, materialName;
 	std::cout << "Enter the file names for files located in assets\n";
 	std::cout << "Enter the object file name (example: dragon.obj)\n";
 	std::cin >> objectName;
 	std::cout << "Enter the material file name (example: dragon.mtl)\n";
 	std::cin >> materialName;
-	loadOBJ("../assets/" + objectName ,"../assets/" + materialName);
+	if(!loadOBJ("../assets/" + objectName ,"../assets/" + materialName))
+		exit(1);
 
   glGenBuffers(1, &VB);
   glBindBuffer(GL_ARRAY_BUFFER, VB);

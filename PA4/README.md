@@ -12,12 +12,6 @@ This project uses OpenGL 3.3. Some computers, such as virtual machines in the EC
 sudo apt-get install libglew-dev libglm-dev libsdl2-dev
 ```
 
-### Mac OSX
-Installation of brew is suggested to easily install the libs. Ensure that the latest version of the Developer Tools is installed.
-```bash
-brew install glew glm sdl2
-```
-
 ## Building and Running
 To build this project there are two options. One is to use CMake which makes including new libraries easier, and handles new files added automatically to the src and include directory. CMake is a small new learning curve but makes things easier in the future.
 The second option is to use the provided Makefile which is used as usual.
@@ -54,3 +48,10 @@ OpenGL 3.3 will run on the [ubuntu.cse.unr.edu](https://ubuntu.cse.unr.edu/) web
 ```bash
 /usr/NX/scripts/vgl/vglrun ./Tutorial
 ```
+
+## Special Instructions
+All files for loading must be placed in the assets folder. 
+When you run the program the terminal will ask for which .obj and .mtl file is to be used. If no mtl file is entered then random colors will be used. When loading the dragon file if you use the dragon.mtl the object will appear as a black blur because the material in the dragon.mtl isn't the same as the material in the .obj file so I recommend not entering a mtl file for the dragon so that random colors are used by entering a random string that isn't a file. 
+
+## Extra Credit
+Added a material to the board in blender so that the bottom is blue which loads to some extent in the object loader. 
