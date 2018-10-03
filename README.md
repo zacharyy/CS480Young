@@ -17,3 +17,9 @@ Can use 1, 2 ,LMB, and RMB to control Cube.
 
 ## PA3: Moons
 Added a moon and left and right arrow key movement.
+
+## PA4: Model Loading
+Load multiple .obj files witg model loader.
+
+## PA5: Assimp Model Loading
+Located in Ethan Park's repository.
